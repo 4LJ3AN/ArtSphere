@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Artsphere</title>
+  <link rel="stylesheet" href="landing.css">
+</head>
+<body>
+
+  <header class="navbar">
+  <div class="logo-container">
+    <img src="Download\logo-transparent.png\" alt="Artsphere Logo" class="logo-img">
+    <div class="logo-text">Artsphere</div>
+  </div>
+    <nav>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="landing.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="techniques.html">Art Techniques</a></li>
+        <li><a href="styles.html">Art Styles</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="artists.html">Famous Artists</a></li>
+      </ul>
+    </nav>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+  
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Watch. Learn. Create.</h1>
+      <p>Explore the world of art and creativity. Let your imagination flow.</p>
+      <a href="techniques.html" class="btn">Get Started</a>
+    </div>
+  </section>
+  <span></span>
+  <section class="about-preview">
+    <h2>What is Artsphere?</h2>
+    <p>Artsphere is your creative space to explore art styles, techniques, and famous works by artists around the world. Whether you're a beginner or growing your skills, we’re here to guide you.</p>
+    <a href="about.html" class="btn">Learn More</a>
+  </section>
+
+  <section class="featured-techniques">
+  <h2>Featured Art Techniques</h2>
+  <div class="techniques-container">
+    <div class="technique-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Watercolor_landscape_painting.jpg" alt="Watercolor">
+      <h3>Watercolor</h3>
+      <p>A soft and flowing painting technique using water-soluble pigments.</p>
+      <a href="art-techniques.html#watercolor" class="btn">Learn More</a>
+    </div>
+    <div class="technique-card">
+      <img src="https://via.placeholder.com/150" alt="Charcoal Drawing">
+      <h3>Charcoal Drawing</h3>
+      <p>Explore shading, blending, and dramatic effects with charcoal.</p>
+      <a href="art-techniques.html#charcoal" class="btn">Learn More</a>
+    </div>
+    <div class="technique-card">
+      <img src="https://via.placeholder.com/150" alt="Acrylic Painting">
+      <h3>Acrylic Painting</h3>
+      <p>Versatile, vibrant colors that dry quickly—perfect for layering.</p>
+      <a href="art-techniques.html#acrylic" class="btn">Learn More</a>
+    </div>
+  </div>
+    
+    <a href="art-techniques.html" class="see-more-btn">See More &raquo;</a>
+  </section>
+
+  <section class="video-tutorials-preview">
+  <h2>Video Tutorials</h2>
+  <p>Learn art techniques visually through hand-picked video tutorials from YouTube.</p>
+
+  <div class="video-grid">
+    <div class="video-card">
+      <iframe src="https://www.youtube.com/embed/1XyNp31r0ZI" title="Watercolor Basics" allowfullscreen></iframe>
+      <h3>Watercolor Basics</h3>
+    </div>
+    <div class="video-card">
+      <iframe src="https://www.youtube.com/embed/2PLv1vVgGvs" title="Charcoal Sketching" allowfullscreen></iframe>
+      <h3>Charcoal Sketching</h3>
+    </div>
+    <div class="video-card">
+      <iframe src="https://www.youtube.com/embed/3pJhU_CmlZk" title="Acrylic Techniques" allowfullscreen></iframe>
+      <h3>Acrylic Techniques</h3>
+    </div>
+  </div>
+
+  <a href="art-techniques.html#video-tutorials" class="see-more-btn">See More &raquo;</a>
+</section>
+  
+  <section class="testimonials">
+  <h2>Words to Inspire</h2>
+    <p class="intro-text">
+      Art has the power to spark imagination, fuel passion, and push boundaries. These timeless words remind us why we create—and why we keep going.
+    </p>
+  <div class="quote-box">
+    <blockquote>
+      “Every artist was first an amateur.”  
+      <span>– Ralph Waldo Emerson</span>
+    </blockquote>
+  </div>
+  <div class="quote-box">
+    <blockquote>
+      “Creativity takes courage.”  
+      <span>– Henri Matisse</span>
+    </blockquote>
+  </div>
+  <div class="quote-box">
+    <blockquote>
+      “Art enables us to find ourselves and lose ourselves at the same time.”  
+      <span>– Thomas Merton</span>
+    </blockquote>
+  </div>
+</section>
+  
+  
+  
+  
+  
+  <footer>
+  <div class="footer-content">
+    <div class="footer-logo">
+      <h3>ArtSphere</h3>
+    </div>
+    <p>&copy; 2025 ArtSphere. All rights reserved.</p>
+    <ul class="footer-links">
+      <li><a href="landing.html">Home</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="art-techniques.html">Techniques</a></li>
+      <li><a href="art-styles.html">Styles</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</footer>
+  
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
