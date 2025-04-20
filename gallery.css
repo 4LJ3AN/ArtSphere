@@ -139,6 +139,7 @@ body {
   background-color: rgba(0, 0, 0, 0.6);
   overflow: auto;
   padding: 50px 20px;
+  overflow: hidden;
 }
 
 .modal-img {
@@ -158,6 +159,8 @@ body {
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
   position: relative;
   animation: fadeIn 0.3s ease-in-out;
+  max-height: 90vh; /* Limit height to viewport */
+  overflow-y: auto;  /* Enable vertical scroll if content overflows */
 }
 
 @keyframes fadeIn {

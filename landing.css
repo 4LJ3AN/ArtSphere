@@ -73,7 +73,11 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 50px 5%;
-  background: linear-gradient(to right, white, transparent);
+  background-image: linear-gradient(to right, white, transparent), url('image.jpg');
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+
 }
 
 .hero-content {
@@ -82,7 +86,7 @@ body {
 
 .hero-content h1 {
   font-size: 2.5em;
-  color: #33CCFF;
+  color: #135d75;
 }
 
 .hero-content p {
@@ -94,7 +98,7 @@ body {
   display: inline-block;
   padding: 10px 20px;
   background-color: #f9e79f;
-  color: #FFF;
+  color: #000000;
   text-decoration: none;
   font-weight: bold;
   border-radius: 5px;
@@ -106,7 +110,6 @@ body {
   padding: 60px 20px;
   text-align: center;
   border-radius: 10px;
-  max-width: 900px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
