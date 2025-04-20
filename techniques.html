@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Art Techniques | ArtSphere</title>
+  <link rel="stylesheet" href="techniques.css" />
+</head>
+<body>
+  <header class="navbar">
+  <div class="logo-container">
+    <img src="Download\logo-transparent.png\" alt="Artsphere Logo" class="logo-img">
+    <div class="logo-text">Art Techniques</div>
+  </div>
+    <nav>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="landing.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="techniques.html">Art Techniques</a></li>
+        <li><a href="styles.html">Art Styles</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="artists.html">Famous Artists</a></li>
+      </ul>
+    </nav>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <main class="techniques">
+  <h1>Art Techniques</h1>
+  <p class="intro">Tap on a technique to learn more, see examples, and watch tutorials.</p>
+
+  <section class="technique-grid">
+    <!-- Technique Card 1 -->
+    <div class="technique-card" onclick="openModal('modalCharcoal')">
+      <img src="images/charcoal-thumb.jpg" alt="Charcoal Drawing" />
+      <h3>Charcoal Drawing</h3>
+    </div>
+
+    <!-- Technique Card 2 -->
+    <div class="technique-card" onclick="openModal('modalWatercolor')">
+      <img src="images/watercolor-thumb.jpg" alt="Watercolor Painting" />
+      <h3>Watercolor Painting</h3>
+    </div>
+  </section>
+
+  <!-- Modals -->
+
+  <!-- Charcoal Modal -->
+  <div id="modalCharcoal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modalCharcoal')">&times;</span>
+      <h2>Charcoal Drawing</h2>
+      <p>Charcoal is a versatile medium ideal for dramatic sketches and realistic shading. Artists use sticks or pencils made of compressed charcoal.</p>
+      
+      <h3>Example Artwork:</h3>
+      <img src="images/charcoal-example.jpg" alt="Charcoal Drawing Example" class="modal-img">
+
+      <h3>Suggested YouTube Tutorial:</h3>
+<a href="https://www.youtube.com/watch?v=YOUTUBE_ID_1" target="_blank" class="video-suggestion">
+  <img src="https://img.youtube.com/vi/YOUTUBE_ID_1/hqdefault.jpg" alt="Charcoal Drawing Tutorial Thumbnail">
+  <div class="video-info">
+    <h4>How to Draw with Charcoal | Beginner's Guide</h4>
+    <p>Watch on YouTube</p>
+  </div>
+</a>
+    </div>
+  </div>
+
+  <!-- Watercolor Modal -->
+  <div id="modalWatercolor" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modalWatercolor')">&times;</span>
+      <h2>Watercolor Painting</h2>
+      <p>Watercolor uses pigments suspended in water for a translucent effect. It’s known for its flowing colors and soft textures.</p>
+      
+      <h3>Example Artwork:</h3>
+      <img src="images/watercolor-example.jpg" alt="Watercolor Example" class="modal-img">
+
+      <h3>Suggested YouTube Tutorial:</h3>
+      <iframe width="100%" height="315" src="https://www.youtube.com/embed/YOUTUBE_ID_2" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+</main>
+
+  <footer>
+      <div class="footer-content">
+    <div class="footer-logo">
+      <h3>ArtSphere</h3>
+    </div>
+    <p>&copy; 2025 ArtSphere. All rights reserved.</p>
+    <ul class="footer-links">
+      <li><a href="landing.html">Home</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="techniques.html">Techniques</a></li>
+      <li><a href="styles.html">Styles</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+  </footer>
+  
+    <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  //modal
+  function openModal(id) {
+    document.getElementById(id).style.display = 'block';
+  }
+
+  function closeModal(id) {
+    document.getElementById(id).style.display = 'none';
+  }
+
+  //when clicking outside
+  window.onclick = function(e) {
+    const modals = document.querySelectorAll('.modal');
+    modals.forEach(modal => {
+      if (e.target === modal) {
+        modal.style.display = 'none';
+      }
+    });
+  }
+
+  </script>
+</body>
+</html>
