@@ -1,1 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Art Styles | ArtSphere</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="navbar">
+    <!-- Navigation here (same as previous pages) -->
+  </header>
 
+  <main class="art-styles">
+    <h1>Art Styles</h1>
+    <p class="intro-text">Explore different art styles from around the world. Understand the techniques, history, and the artists who made them famous.</p>
+
+    <!-- List of Art Styles -->
+    <section class="style-list">
+      <div class="art-style-card" onclick="openModal('modal1')">
+        <h3>Impressionism</h3>
+        <p>Learn about the movement that changed the way we look at light and color.</p>
+      </div>
+
+      <div class="art-style-card" onclick="openModal('modal2')">
+        <h3>Surrealism</h3>
+        <p>A revolutionary style that brings dream-like concepts to life on the canvas.</p>
+      </div>
+
+      <div class="art-style-card" onclick="openModal('modal3')">
+        <h3>Renaissance</h3>
+        <p>The rebirth of art and science in Europe, with a focus on humanism.</p>
+      </div>
+
+      <!-- More styles here -->
+    </section>
+  </main>
+
+  <!-- Modals for each style -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal1')">&times;</span>
+      <h2>Impressionism</h2>
+      <p><strong>Artists:</strong> Claude Monet, Edgar Degas, Pierre-Auguste Renoir</p>
+      <p><strong>Description:</strong> This style focuses on capturing the effects of light and color, often painted en plein air.</p>
+      <p><strong>Famous Artworks:</strong> "Water Lilies" by Monet, "Ballet Rehearsal" by Degas</p>
+      <p><strong>Famous Artworks:</strong> <img src="images/monet-water-lilies.jpg" alt="Water Lilies" /></p>
+      <p>Suggested materials: Oil paints, canvas, brushes.</p>
+    </div>
+  </div>
+
+  <!-- More modals for other styles -->
+
+  <footer>
+    <!-- Footer content here -->
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
