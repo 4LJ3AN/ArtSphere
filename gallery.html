@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | ArtSphere</title>
+  <link rel="stylesheet" href="gallery.css" />
+</head>
+<body>
+  <header class="navbar">
+  <div class="logo-container">
+    <img src="Download\logo-transparent.png\" alt="Artsphere Logo" class="logo-img">
+    <div class="logo-text">Art Gallery</div>
+  </div>
+    <nav>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="landing.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="techniques.html">Art Techniques</a></li>
+        <li><a href="styles.html">Art Styles</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="artists.html">Famous Artists</a></li>
+      </ul>
+    </nav>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <main class="gallery">
+    <h1>Gallery</h1>
+    <p class="gallery-intro">Explore iconic artworks from around the world.</p>
+
+<section class="art-grid">
+  <!-- Artwork 1 -->
+  <div class="art-card" onclick="openModal('modal1')">
+    <img src="images/starry-night.jpg" alt="Starry Night" />
+    <h3>Starry Night</h3>
+    <p>Vincent van Gogh</p>
+  </div>
+
+  <!-- Artwork 2 -->
+  <div class="art-card" onclick="openModal('modal2')">
+    <img src="images/mona-lisa.jpg" alt="Mona Lisa" />
+    <h3>Mona Lisa</h3>
+    <p>Leonardo da Vinci</p>
+  </div>
+
+  <!-- Artwork 3 -->
+  <div class="art-card" onclick="openModal('modal3')">
+    <img src="images/persistence-of-memory.jpg" alt="Persistence of Memory" />
+    <h3>The Persistence of Memory</h3>
+    <p>Salvador Dalí</p>
+  </div>
+  
+  <div class="art-card" onclick="openModal('modal4')">
+    <img src="images/persistence-of-memory.jpg" alt="3d na borat" />
+    <h3>3d na borat</h3>
+    <p>Aljean Mark Angeles</p>
+  </div>
+</section>
+
+<!-- Modals -->
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal1')">&times;</span>
+    <img src="images/starry-night.jpg" alt="Starry Night" class="modal-img" />
+    <h2>Starry Night</h2>
+    <p><strong>Artist:</strong> Vincent van Gogh</p>
+    <p><strong>Technique:</strong> Oil Painting</p>
+    <p><strong>Style:</strong> Post-Impressionism</p>
+    <p><strong>Description:</strong> Vincent van Gogh’s The Starry Night is one of the most iconic and emotionally powerful paintings in art history. Created in June 1889 during Van Gogh's stay at the Saint-Paul-de-Mausole asylum in Saint-Rémy-de-Provence, France, it captures a swirling night sky filled with energy, emotion, and movement, seen from the window of his room.
+</p>
+  </div>
+</div>
+
+<div id="modal2" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal2')">&times;</span>
+    <img src="starry_night.jpg" alt="Starry Night" class="modal-img" />
+    <h2>Mona Lisa</h2>
+    <p><strong>Artist:</strong> Leonardo da Vinci</p>
+    <p><strong>Technique:</strong> Oil Painting</p>
+    <p><strong>Style:</strong> Renaissance</p>
+    <p><strong>Description:</strong> Leonardo da Vinci’s Mona Lisa is arguably the most famous and recognized painting in the world. Created between 1503 and 1506 (possibly continuing until 1517), this iconic portrait has fascinated viewers for centuries due to its subject’s mysterious expression, innovative technique, and subtle detail.</p>
+  </div>
+</div>
+
+<div id="modal3" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal3')">&times;</span>
+    <img src="starry-night.jpg" alt="Starry Night" class="modal-img" />
+    <h2>The Persistence of Memory</h2>
+    <p><strong>Artist:</strong> Salvador Dalí</p>
+    <p><strong>Technique:</strong> Oil Painting</p>
+    <p><strong>Style:</strong> Surrealism</p>
+    <p><strong>Description:</strong> Salvador Dalí’s The Persistence of Memory (1931) is one of the most iconic and recognizable works of Surrealist art. Often referred to as the “melting clocks painting,” it presents a dreamlike world where time appears to have lost all meaning—challenging the viewer’s perception of reality, time, and memory.</p>
+  </div>
+</div>
+  
+<div id="modal4" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal4')">&times;</span>
+    <img src="images/starry-night.jpg" alt="3d na borat" class="modal-img" />
+    <h2>The 3d na borat</h2>
+    <p><strong>Artist:</strong> Aljean Mark A. Angeles</p>
+    <p><strong>Technique:</strong> Charcoal Drawing</p>
+    <p><strong>Style:</strong> Expressionism</p>
+    <p><strong>Description:</strong> Maangas to pramis.</p>
+  </div>
+</div>
+  </main>
+
+  <footer>
+      <div class="footer-content">
+    <div class="footer-logo">
+      <h3>ArtSphere</h3>
+    </div>
+    <p>&copy; 2025 ArtSphere. All rights reserved.</p>
+    <ul class="footer-links">
+      <li><a href="landing.html">Home</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="techniques.html">Techniques</a></li>
+      <li><a href="styles.html">Styles</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+  </footer>
+  
+    <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  //modal
+  function openModal(id) {
+    document.getElementById(id).style.display = 'block';
+  }
+
+  function closeModal(id) {
+    document.getElementById(id).style.display = 'none';
+  }
+
+  //when clicking outside
+  window.onclick = function(e) {
+    const modals = document.querySelectorAll('.modal');
+    modals.forEach(modal => {
+      if (e.target === modal) {
+        modal.style.display = 'none';
+      }
+    });
+  }
+
+  </script>
+</body>
+</html>
