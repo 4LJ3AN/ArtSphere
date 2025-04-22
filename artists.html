@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | ArtSphere</title>
+  <link rel="stylesheet" href="artists.css" />
+  <link rel="icon" href="assets/interface/logo-removebg-preview.png">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo-container">
+          <img src="assets/interface/logo-removebg-preview.png" alt="Artsphere Logo" class="logo-img">
+          <div class="logo-text"> Famous Artists</div>
+        </div>
+          <nav>
+            <ul class="nav-links" id="nav-links">
+              <li><a href="landing.html">Home</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="techniques.html">Art Techniques</a></li>
+              <li><a href="styles.html">Art Styles</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="artists.html">Famous Artists</a></li>
+            </ul>
+          </nav>
+          <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </header>
+
+        <div class="container">
+            <div class="artist">
+              <h2>Leonardo da Vinci</h2>
+              <p><strong>Style:</strong> Renaissance</p>
+              <p><strong>Notable Works:</strong> Mona Lisa, The Last Supper</p>
+            </div>
+        
+            <div class="artist">
+              <h2>Vincent van Gogh</h2>
+              <p><strong>Style:</strong> Post-Impressionism</p>
+              <p><strong>Notable Works:</strong> Starry Night, Sunflowers</p>
+            </div>
+        
+            <div class="artist">
+              <h2>Pablo Picasso</h2>
+              <p><strong>Style:</strong> Cubism</p>
+              <p><strong>Notable Works:</strong> Guernica, Les Demoiselles d'Avignon</p>
+            </div>
+        
+            <div class="artist">
+              <h2>Claude Monet</h2>
+              <p><strong>Style:</strong> Impressionism</p>
+              <p><strong>Notable Works:</strong> Water Lilies, Impression, Sunrise</p>
+            </div>
+        
+            <div class="artist">
+              <h2>Salvador Dalí</h2>
+              <p><strong>Style:</strong> Surrealism</p>
+              <p><strong>Notable Works:</strong> The Persistence of Memory</p>
+            </div>
+        
+            <div class="artist">
+              <h2>Frida Kahlo</h2>
+              <p><strong>Style:</strong> Surrealism / Magical Realism</p>
+              <p><strong>Notable Works:</strong> The Two Fridas, Self-Portrait with Thorn Necklace</p>
+            </div>
+        
+            <div class="artist">
+              <h2>Rembrandt van Rijn</h2>
+              <p><strong>Style:</strong> Baroque</p>
+              <p><strong>Notable Works:</strong> The Night Watch, The Storm on the Sea of Galilee</p>
+            </div>
+        
+            <div class="artist">
+              <h2>Andy Warhol</h2>
+              <p><strong>Style:</strong> Pop Art</p>
+              <p><strong>Notable Works:</strong> Campbell's Soup Cans, Marilyn Diptych</p>
+            </div>
+        
+            <div class="artist">
+              <h2>Jackson Pollock</h2>
+              <p><strong>Style:</strong> Abstract Expressionism</p>
+              <p><strong>Notable Works:</strong> No. 5, 1948</p>
+            </div>
+        
+            <div class="artist">
+              <h2>Michelangelo Buonarroti</h2>
+              <p><strong>Style:</strong> High Renaissance</p>
+              <p><strong>Notable Works:</strong> David, The Creation of Adam</p>
+            </div>
+          </div>
+
+  <footer>
+    <div class="footer-content">
+  <div class="footer-logo">
+    <h3>ArtSphere</h3>
+  </div>
+  <p>&copy; 2025 ArtSphere. All rights reserved.</p>
+  <ul class="footer-links">
+    <li><a href="landing.html">Home</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="techniques.html">Techniques</a></li>
+    <li><a href="styles.html">Styles</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</div>
+</footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

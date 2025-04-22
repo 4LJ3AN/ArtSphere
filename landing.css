@@ -73,7 +73,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 50px 5%;
-  background-image: linear-gradient(to right, white, transparent), url('image.jpg');
+  background-image: linear-gradient(to right, white, transparent), url('assets/interface/image.jpg');
   height: 300px;
   background-size: cover;
   background-position: center;

@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Art Styles | ArtSphere</title>
   <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="logo-removebg-preview.png">
+  <link rel="icon" href="assets/interface/logo-removebg-preview.png">
 </head>
 <body>
   <header class="navbar">
     <div class="logo-container">
-      <img src="logo-removebg-preview.png" alt="Artsphere Logo" class="logo-img">
+      <img src="assets/interface/logo-removebg-preview.png" alt="Artsphere Logo" class="logo-img">
       <div class="logo-text"> Art Gallery</div>
     </div>
       <nav>
@@ -88,6 +88,14 @@
 </footer>
 
   <script>
+
+const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+    
     function openModal(id) {
   document.getElementById(id).style.display = 'block';
 }
