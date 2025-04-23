@@ -137,7 +137,7 @@ body {
 .modal-content img {
   max-width: 100%;
   height: auto;
-  display: flex;
+  display: block;
   margin-top: 20px;
 }
   
