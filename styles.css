@@ -116,6 +116,7 @@ body {
     overflow-y: auto;
     align-content: center;
     margin: auto;
+    display: flex;
   }
   
   .modal {
