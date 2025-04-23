@@ -131,10 +131,9 @@ body {
   border-radius: 10px;
   word-wrap: break-word;
   box-sizing: border-box;
-  display: flex;
 }
 
-.modal-content img {
+.modal img {
   max-width: 100%;
   height: auto;
   display: block;
