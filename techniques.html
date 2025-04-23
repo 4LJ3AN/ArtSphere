@@ -10,7 +10,7 @@
 <body>
   <header class="navbar">
   <div class="logo-container">
-    <img src="assets/interface/logo-removebg-preview.pngs" alt="Artsphere Logo" class="logo-img">
+    <img src="assets/interface/logo-removebg-preview.png" alt="Artsphere Logo" class="logo-img">
     <div class="logo-text">Art Techniques</div>
   </div>
     <nav>
@@ -43,9 +43,14 @@
     </div>
 
     <!-- Technique Card 2 -->
-    <div class="technique-card" onclick="openModal('modalWatercolor')">
-      <img src="images/watercolor-thumb.jpg" alt="Watercolor Painting" />
-      <h3>Watercolor Painting</h3>
+    <div class="technique-card" onclick="openModal('modalPainting')">
+      <img src="https://www.milanartinstitute.com/hs-fs/hubfs/Untitled%20design%20-%202024-11-13T161235.841.png?width=632&height=316&name=Untitled%20design%20-%202024-11-13T161235.841.png" alt="Watercolor Painting" />
+      <h3>Painting Techniques</h3>
+    </div>
+
+    <div class="technique-card" onclick="openModal('modalColoredPencil')">
+      <img src="https://i.pinimg.com/736x/89/94/35/8994359ff01db16e695a55da389a3e52.jpg" alt="Watercolor Painting" />
+      <h3>Colored Pencil Techniques</h3>
     </div>
   </section>
 
@@ -106,7 +111,7 @@
 
       <h3>Suggested YouTube Tutorial:</h3>
 <a href="https://youtu.be/225mwT-gGu8?si=ntLAloZJ8ZksMHOv" target="_blank" class="video-suggestion">
-  <img src="https://img.youtube.com/vi/ntLAloZJ8ZksMHOv/hqdefault.jpg" alt="Charcoal Drawing Tutorial Thumbnail">
+  <img src="https://img.youtube.com/vi/225mwT-gGu8/hqdefault.jpg" alt="Charcoal Drawing Tutorial Thumbnail">
   <div class="video-info">
     <h4>Top 5 Shading Techniques for Begginers</h4>
     <p>Watch on YouTube</p>
@@ -116,19 +121,141 @@
   </div>
 
   <!-- Watercolor Modal -->
-  <div id="modalWatercolor" class="modal">
+  <div id="modalPainting" class="modal">
     <div class="modal-content">
-      <span class="close" onclick="closeModal('modalWatercolor')">&times;</span>
-      <h2>Watercolor Painting</h2>
-      <p>Watercolor uses pigments suspended in water for a translucent effect. It’s known for its flowing colors and soft textures.</p>
-      
-      <h3>Example Artwork:</h3>
-      <img src="images/watercolor-example.jpg" alt="Watercolor Example" class="modal-img">
-
+      <span class="close" onclick="closeModal('modalPainting')">&times;</span>
+      <h2>Painting Techniques</h2>
+      <p>Painting techniques refer to the various methods artists use to apply paint to a surface to achieve different visual effects, textures, and styles. Below are some of the most well-known and widely used painting techniques throughout art history.</p>
+  
+      <h3>Oil Painting</h3>
+      <img src="BeFunky-collage.jpg" alt="Oil Painting Example" class="modal-img">
+      <p>Oil painting is a traditional art form where pigments are mixed with a drying oil (like linseed, walnut, or poppy seed) to create a paint that can be applied to a canvas, wood panel, or copper. This technique allows for a wide range of effects, including rich colors, layering, and textural variations. </p>
+  
+      <h3>Acrylic Painting</h3>
+      <img src="https://discountartncraftwarehouse.com.au/dac/assets/media/Blog/Acrylic-Paint-on-Wood.jpg" alt="Acrylic Painting Example" class="modal-img">
+      <p>Acrylic painting is a form of art created using acrylic paints, which are fast-drying and versatile. These paints are made of pigment suspended in an acrylic polymer emulsion and can be used on a variety of surfaces. Acrylics offer a wide range of techniques, allowing for both detailed and textured work, and can mimic the look of watercolors, oil paints, or gouache. </p>
+  
+      <h3>Watercolor Painting</h3>
+      <img src="https://c02.purpledshub.com/uploads/sites/51/2023/03/watercolor-painting-techniques-pexels-pavel-danilyuk-6925328-1-732a805.jpg?w=1200" alt="Watercolor Painting Example" class="modal-img">
+      <p>Watercolor painting is a water-based painting technique where pigments are suspended in a water solution and applied to a surface, typically paper. It's prized for its transparent colors and ability to create washes and soft effects. The process involves mixing water and pigment, often with a brush, to achieve different shades and tones. </p>
+  
+      <h3>Gouache</h3>
+      <img src="https://d2culxnxbccemt.cloudfront.net/craft/content/uploads/2017/07/11171633/gouache-landscape.jpeg" alt="Gouache Painting Example" class="modal-img">
+      <p>GGouache is an opaque water-based paint that is similar to watercolor but offers a richer, more vibrant color and a matte finish. It is known for its ability to create bold, saturated colors and its ease of use, including the ability to paint light over dark and dark over light. Gouache is also known for its quick drying time, allowing for easy layering and quick fixes. </p>
+  
+      <h3>Tempera</h3>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Duccio_The-Madonna-and-Child-128.jpg/800px-Duccio_The-Madonna-and-Child-128.jpg" alt="Tempera Painting Example" class="modal-img">
+      <p>Tempera painting is a technique where pigments are mixed with a water-soluble binder, most commonly egg yolk (hence the name "egg tempera"). It's a permanent, fast-drying medium that produces opaque, vibrant colors, often applied to wood, paper, or other absorbent surfaces. </p>
+  
+      <h3>Impasto</h3>
+      <img src="https://www.oldholland.com/wp-content/uploads/2019/09/Impasto-2.jpg" alt="Impasto Painting Example" class="modal-img">
+      <p>Impasto painting is a technique where paint is applied thickly to a surface, creating a textural and three-dimensional effect. The brushstrokes or palette knife marks are visible, and the paint appears to stand out from the canvas. This technique is commonly used in oil paintings, but can also be achieved with acrylics and sometimes with watercolors. </p>
+  
+      <h3>Glazing</h3>
+      <img src="https://images.squarespace-cdn.com/content/v1/574a820cb654f95fce41d01f/29ef1b97-653f-405c-b0ba-799a67b7910f/Tulip2.jpg" alt="Glazing Example" class="modal-img">
+      <p>Glazing in painting is a technique where thin, transparent or semi-transparent layers of paint are applied over a dried underpainting, usually to create luminous effects and enhance the colors below. This method allows light to pass through the glazes and reflect off the underlying layers, creating a depth and richness that can't be achieved through direct color mixing. </p>
+  
+      <h3>Grisaille</h3>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Pieter_Bruegel_the_Elder_-_Christ_and_the_Woman_Taken_in_Adultery_-_WGA03469.jpg" alt="Grisaille Painting Example" class="modal-img">
+      <p>Grisaille painting is a technique where artists use variations of a single color, typically shades of gray, to create an image. It's often used as an underpainting, the first layer of a painting that will later be glazed with color, to establish the form and values before color is introduced. </p>
+  
+      <h3>Dry Brush</h3>
+      <img src="https://arthive.com/res/media/img/oy800/article/545/9011310@2x.jpg" alt="Dry Brush Example" class="modal-img">
+      <p>Dry brushing is a painting technique where paint is applied with a brush that is relatively dry, leaving a textured and often worn finish. It's commonly used to create highlights, emphasize textures, or achieve a rustic look. The technique involves using a brush with a small amount of paint, applying it with a light touch, and focusing on raised areas or edges to create a subtle highlighting effect. </p>
+  
+      <h3>Scumbling</h3>
+      <img src="https://drawpaintacademy.com/wp-content/uploads/2018/06/Joseph-Mallord-William-Turner-Snow-Storm.jpg" alt="Scumbling Example" class="modal-img">
+      <p>Scumbling in painting is a technique where a thin, opaque layer of paint is applied irregularly over a dry underpainting, creating a broken, textured effect and allowing the underlying color to peek through. It's a way to add visual interest, depth, and a sense of motion to a painting. </p>
+  
       <h3>Suggested YouTube Tutorial:</h3>
-      <iframe width="100%" height="315" src="https://www.youtube.com/embed/YOUTUBE_ID_2" frameborder="0" allowfullscreen></iframe>
+      <a href="https://youtu.be/jQAeOjK-XD0?si=Mi3-L-XATAFMwXfL" target="_blank" class="video-suggestion">
+        <img src="https://img.youtube.com/vi/jQAeOjK-XD0/hqdefault.jpg" alt="Painting Techniques Tutorial Thumbnail">
+        <div class="video-info">
+          <h4>Ultimate Beginners Guide to Start Painting</h4>
+          <p>Watch on YouTube</p>
+        </div>
+      </a>
+      <a href="https://youtu.be/CFULyTf-RzM?si=m6X776t-q5uhjywD" target="_blank" class="video-suggestion">
+        <img src="https://img.youtube.com/vi/CFULyTf-RzM/hqdefault.jpg" alt="Painting Techniques Tutorial Thumbnail">
+          <div class="video-info">
+            <h4>Acrylic Painting for Beginners: Techniques & Supplies</h4>
+            <p>Watch on YouTube</p>    
+        </div>
+      </a>
+      <a href="https://youtu.be/C8iKj4pfqAA?si=-okY0hUNIKLTKdpj" target="_blank" class="video-suggestion">
+        <img src="https://img.youtube.com/vi/C8iKj4pfqAA/hqdefault.jpg" alt="Painting Techniques Tutorial Thumbnail">
+          <div class="video-info">
+            <h4>The ultimate WATERCOLOUR TUTORIAL | For beginners | Drawlikeasir</h4>
+            <p>Watch on YouTube</p>    
+        </div>
+      </a>
     </div>
   </div>
+   
+  <div id="modalColoredPencil" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modalColoredPencil')">&times;</span>
+      <h2>Colored Pencil Techniques</h2>
+      <p>Colored pencil techniques refer to the different ways of applying and blending colored pencils to achieve various visual effects, textures, and depths in artwork. Below are some well-known colored pencil techniques used by artists.</p>
+
+      <h3>Layering</h3>
+      <img src="https://www.pencil-topics.co.uk/images/yellow-layer-over-pressure-test.png" alt="Layering Example" class="modal-img">
+      <p>Layering involves building up multiple layers of colored pencil to achieve smooth transitions, blending, and rich color. The technique is used to create depth and soft gradients by gradually layering different shades on top of one another.</p>
+
+      <h3>Burnishing</h3>
+      <img src="https://www.pencil-topics.co.uk/images/burnishing-04.jpg" alt="Burnishing Example" class="modal-img">
+      <p>Burnishing is the process of applying heavy pressure with a lighter color pencil or a colorless blender to blend colors into a smooth, polished finish. It creates a glossy, waxy effect that softens pencil strokes and enhances color saturation.</p>
+
+      <h3>Blending</h3>
+      <img src="https://i.ytimg.com/vi/LjaEVbPA1UY/maxresdefault.jpg" alt="Blending Example" class="modal-img">
+      <p>Blending is the act of mixing different colored pencils or hues together to create smooth transitions and seamless color gradients. This technique can be done using blending stumps, solvents, or simply layering pencil strokes over each other.</p>
+
+      <h3>Scumbling</h3>
+      <img src="https://i.ytimg.com/vi/bKdPgdcWmfY/maxresdefault.jpg" alt="Scumbling Example" class="modal-img">
+      <p>Scumbling involves using circular, overlapping motions with the pencil to create texture or soft gradients. This technique is particularly effective for building up textures like fur, clouds, or fabric.</p>
+
+      <h3>Hatching & Cross-Hatching</h3>
+      <img src="https://www.pencil-topics.co.uk/images/cross-hatching.jpg" alt="Hatching Example" class="modal-img">
+      <p>Hatching and cross-hatching are drawing techniques where parallel lines (hatching) or intersecting lines (cross-hatching) are used to create shading and texture. These methods allow for the creation of light and shadow by varying line density.</p>
+
+      <h3>Solvent Blending</h3>
+      <img src="https://i.ytimg.com/vi/klvNemgHvJw/maxresdefault.jpg" alt="Solvent Blending Example" class="modal-img">
+      <p>Solvent blending uses a solvent like rubbing alcohol or baby oil to dissolve and smooth the pigment, giving a watercolor-like effect. It helps achieve a smooth, painterly finish while enhancing the depth and vibrancy of the colors.</p>
+
+      <h3>Impressed Line (Indenting)</h3>
+      <img src="https://www.artwithmisslinda.com/wp-content/uploads/2022/11/20210113_194245275_iOS-scaled.jpg" alt="Impressed Line Example" class="modal-img">
+      <p>Impressed line involves using a tool (such as a stylus or embossing tool) to make impressions or indentations into the paper before applying color. This technique allows for highlights and fine details to appear as white or lighter areas in the final artwork.</p>
+
+      <h3>Highlighting & Lifting</h3>
+      <img src="https://i.ytimg.com/vi/Q7cz33x-iXI/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCA3Xh7oo6owGKXbUe76hfaUg0dQg" alt="Highlighting Example" class="modal-img">
+      <p>Highlighting involves using an eraser or a white pencil to lift color off the paper and create areas of light. This technique is often used for highlighting bright spots or creating reflective surfaces like glass or metal.</p>
+
+      <h3>Suggested YouTube Tutorial:</h3>
+      <a href="https://youtu.be/colored-pencil-tutorial1" target="_blank" class="video-suggestion">
+        <img src="https://img.youtube.com/vi/colored-pencil-tutorial1/hqdefault.jpg" alt="Colored Pencil Techniques Tutorial Thumbnail">
+        <div class="video-info">
+          <h4>Colored Pencil Techniques for Beginners</h4>
+          <p>Watch on YouTube</p>
+        </div>
+      </a>
+      <a href="https://youtu.be/colored-pencil-tutorial2" target="_blank" class="video-suggestion">
+        <img src="https://img.youtube.com/vi/colored-pencil-tutorial2/hqdefault.jpg" alt="Colored Pencil Techniques Tutorial Thumbnail">
+        <div class="video-info">
+          <h4>Mastering Colored Pencils: Tips & Tricks</h4>
+          <p>Watch on YouTube</p>
+        </div>
+      </a>
+      <a href="https://youtu.be/colored-pencil-tutorial3" target="_blank" class="video-suggestion">
+        <img src="https://img.youtube.com/vi/colored-pencil-tutorial3/hqdefault.jpg" alt="Colored Pencil Techniques Tutorial Thumbnail">
+        <div class="video-info">
+          <h4>Colored Pencil Drawing Techniques</h4>
+          <p>Watch on YouTube</p>
+        </div>
+      </a>
+    </div>
+</div>
+
+
 </main>
 
   <footer>

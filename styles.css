@@ -79,7 +79,7 @@ body {
   }
   
   .style-list {
-    display: flex;
+    display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 1.5rem;
     margin-top: 2rem;
@@ -129,6 +129,14 @@ body {
     background-color: rgba(0, 0, 0, 0.7);
     padding: 2rem;
     overflow: auto;
+  }
+
+  .modal img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    object-fit: cover;
   }
   
   .close {
