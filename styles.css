@@ -171,6 +171,10 @@ body {
   .hamburger {
     display: flex;
   }
+
+  .modal {
+    display: flex;
+  }
 }
 
 footer {
