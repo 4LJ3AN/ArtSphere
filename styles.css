@@ -172,8 +172,9 @@ body {
     display: flex;
   }
 
-  .modal {
-    display: flex;
+  .modal-content {
+    padding: 1rem;
+    max-width: 90%;
   }
 }
 
